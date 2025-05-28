@@ -154,7 +154,7 @@ const CaseList = () => {
       console.error('Failed to update case:', error);
       const backendMessage = error.response?.data?.message;
       const userMessage = backendMessage
-        ? getConciseErrorMessage(backendMessage) // Use the new function
+        ? getConciseErrorMessage(backendMessage) 
         : 'Failed to update case. Please try again.';
       showMessage(userMessage, 'error');
     }
