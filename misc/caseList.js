@@ -6,7 +6,7 @@ import {
   createCase,
   deleteCase,
   updateCaseStatus,
-} from '../api/caseService';
+} from '../src/api/caseService';
 
 import './caseList.css';
 

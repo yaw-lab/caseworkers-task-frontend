@@ -1,0 +1,38 @@
+/* src/components/MessageDisplay.css */
+.message {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.error-message {
+    background-color: #fcebeb;
+    /* Light red */
+    color: #c90000;
+    /* Darker red */
+    border: 1px solid #eba4a4;
+}
+
+.success-message {
+    background-color: #e6f7ed;
+    /* Light green */
+    color: #007a3c;
+    /* Darker green */
+    border: 1px solid #a3e0b7;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    } }
