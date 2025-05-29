@@ -1,0 +1,81 @@
+/* src/components/CaseForm.css */
+.case-form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-top: 5px solid #0056b3;
+    /* A nice accent color */
+}
+
+.case-form-container h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.case-form-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns for inputs */
+    gap: 15px;
+    /* Space between grid items */
+}
+
+.case-form-container input[type="text"],
+.case-form-container select {
+    width: 100%;
+    /* Take full width of grid column */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+.case-form-container input[type="text"]:focus,
+.case-form-container select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.case-form-container button[type="submit"] {
+    grid-column: 1 / -1;
+    /* Make button span across both columns */
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    justify-self: center;
+    /* Center the button if it doesn't take full width */
+    width: auto;
+    /* Allow button to size based on content and padding */
+    min-width: 150px;
+    /* Ensure a minimum width */
+}
+
+.case-form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.case-form-container button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .case-form-container form {
+        grid-template-columns: 1fr;
+        /* Stack inputs vertically on smaller screens */
+    } }
