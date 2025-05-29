@@ -1,7 +1,7 @@
 // src/components/CaseItem.js
 import React from 'react';
-import CaseEditForm from './CaseEditForm'; // Import the new edit form
-import './CaseItem.css'; // You'll need to create this CSS file
+import CaseEditForm from './CaseEditForm'; 
+import './CaseItem.css'; 
 
 const CaseItem = ({ c, onEditClick, onDelete, editingCaseId, onUpdate, onCancelEdit, showMessage }) => {
   const isEditing = editingCaseId === c.id;

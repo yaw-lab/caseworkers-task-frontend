@@ -1,6 +1,6 @@
 // src/components/CaseEditForm.js
 import React, { useState, useEffect } from 'react';
-import './CaseEditForm.css'; // You'll need to create this CSS file
+import './CaseEditForm.css'; 
 
 const CaseEditForm = ({ caseToEdit, onUpdate, onCancel, showMessage }) => {
   const [editCase, setEditCase] = useState({
@@ -17,7 +17,7 @@ const CaseEditForm = ({ caseToEdit, onUpdate, onCancel, showMessage }) => {
         title: caseToEdit.title,
         description: caseToEdit.description,
         status: caseToEdit.status,
-        caseNumber: caseToEdit.caseNumber, // Set case number
+        caseNumber: caseToEdit.caseNumber, 
       });
     }
   }, [caseToEdit]);

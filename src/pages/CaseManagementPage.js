@@ -5,13 +5,13 @@ import {
   createCase,
   deleteCase,
   updateCaseStatus,
-} from '../api/caseService'; // Assuming caseService is in src/api
+} from '../api/caseService'; 
 
 import CaseForm from '../components/CaseForm';
 import CaseItem from '../components/CaseItem';
 import MessageDisplay from '../components/MessageDisplay';
 
-import './CaseManagementPage.css'; // Rename your existing caseList.css or create new
+import './CaseManagementPage.css';
 
 const CaseManagementPage = () => {
   const [cases, setCases] = useState([]);
@@ -100,7 +100,7 @@ const CaseManagementPage = () => {
     }
   };
 
-  const handleCreateCase = async (newCaseData) => { // Renamed for clarity
+  const handleCreateCase = async (newCaseData) => { 
     try {
       await createCase(newCaseData);
       fetchCases();
@@ -121,7 +121,7 @@ const CaseManagementPage = () => {
     setSuccessMessage(''); // Clear success when starting edit
   }, []);
 
-  const handleUpdateCase = async (id, updatedDetails) => { // Renamed for clarity
+  const handleUpdateCase = async (id, updatedDetails) => { 
     try {
       await updateCaseStatus(id, updatedDetails);
       setEditingCaseId(null);

@@ -1,6 +1,6 @@
 // src/components/CaseForm.js
 import React, { useState } from 'react';
-import './CaseForm.css'; // You'll need to create this CSS file
+import './CaseForm.css'; 
 
 const CaseForm = ({ onSubmit }) => {
   const [newCase, setNewCase] = useState({
